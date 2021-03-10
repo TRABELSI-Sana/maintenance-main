@@ -3,16 +3,9 @@
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="http://schemas.sulu.io/template/template http://schemas.sulu.io/template/template-1.0.xsd">
 
-    <key>defaults</key>
-
-    <view>pages/default</view>
+    <key>user</key>
+    <view>pages/user</view>
     <controller>Sulu\Bundle\WebsiteBundle\Controller\DefaultController::indexAction</controller>
-    <cacheLifetime>604800</cacheLifetime>
-
-    <meta>
-        <title lang="en">Default</title>
-        <title lang="de">Standard</title>
-    </meta>
 
     <properties>
         <property name="title" type="text_line" mandatory="true">
@@ -35,12 +28,37 @@
 
             <tag name="sulu.rlp"/>
         </property>
-
-        <property name="article" type="text_editor">
+        <property name="idUser" type="text_line">
             <meta>
-                <title lang="en">Article</title>
-                <title lang="de">Artikel</title>
+                <title lang="en">IdUser</title>
+                <title lang="fr">IdUtilisateur</title>
             </meta>
         </property>
+        <property name="nom" type="text_line">
+            <meta>
+                <title lang="en">Name</title>
+                <title lang="fr">Nom</title>
+            </meta>
+        </property>
+
+        <property name="prenom" type="text_line">
+            <meta>
+                <title lang="en">Last Name</title>
+                <title lang="fr">Prenom</title>
+            </meta>
+        </property>
+
+        <property name="email" type="email">
+            <meta>
+                <title lang="en">Email</title>
+                <title lang="fr">Email</title>
+            </meta>
+        </property>
+
+
+
+
+
     </properties>
+    <!-- ... -->
 </template>

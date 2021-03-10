@@ -2,6 +2,6 @@
 
 {% block content %}
     <h1>{{ content.title }}</h1>
-    {{ content.startDate}}
-    {{ content.endDate}}
+    <input type="date" value={{ content.startDate}}>
+    <input type="date" value= {{content.endDate}}>
 {% endblock %}

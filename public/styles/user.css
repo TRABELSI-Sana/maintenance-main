@@ -1,0 +1,18 @@
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 30%;
+    border: 1px;
+    border: solid;
+    border-width: 30%;
+    padding: 2%;
+    margin: auto;
+    font-family: fantasy;
+    color: cornflowerblue;
+}
+.container {
+height: 100%;
+    background: no-repeat url(../img/img_1.png);
+   background-size: 100%;
+}

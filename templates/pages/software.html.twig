@@ -1,0 +1,14 @@
+   {% block style %}
+   <link href="{{ asset('styles/software.css') }}" rel="stylesheet">
+
+    {% endblock %}
+
+{% block content %}
+    <h1>{{ content.title }}</h1>
+    <div class="form">
+     <label for="IdSoftware">IdSoftware:</label>
+    <input type="text" value={{ content.idSoftware}}>
+
+    <label for="libelle">libelle:</label>
+    <input type="text" value= {{content.libelle}}>
+{% endblock %}

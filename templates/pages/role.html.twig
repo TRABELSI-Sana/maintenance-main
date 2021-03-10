@@ -1,0 +1,20 @@
+{% extends "base.html.twig" %}
+
+   {% block style %}
+   <link href="../css/user.css" rel="stylesheet">
+
+    {% endblock %}
+{% block content %}
+    <h1>{{ content.title }}</h1>
+    <div class="menu">
+    <label for="idUser">IdRole:</label>
+    <input type="text" value={{ content.IdRole}}>
+
+    <label for="nom">Nom:</label>
+    <input type="text" value= {{content.nom}}>
+
+    <label for="prenom">Role:</label>
+    <input type="text" value= {{content.role}}>
+
+</div>
+{% endblock %}

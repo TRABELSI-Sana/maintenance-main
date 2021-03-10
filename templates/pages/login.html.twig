@@ -2,6 +2,15 @@
 
 {% block content %}
     <h1>{{ content.title }}</h1>
+    <form action="/action_page.php">
+      <label for="fname">Login:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Password:</label>
+     <input type="password" id="lname" name="lname"><br><br>
+      <input type="submit" value="connexion">
+     </form>
+    </form>
+
        {{ content.email}}
        {{ content.password}}
 {% endblock %}

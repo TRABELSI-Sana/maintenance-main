@@ -1,0 +1,15 @@
+{% extends "base.html.twig" %}
+
+{% block content %}
+    <h1>{{ content.title }}</h1>
+    <label for="IdTask">IdTask:</label>
+    <input type="text" value={{ content.idTask}}>
+    <div property="pages">
+    {% for page in content.pages %}
+        <div class="{{ view.pages.presentAs }}">
+            <h2><a href="{{ sulu_content_path(page.url) }}">{{ page.title }}</a></h2>
+            <p>{{ page.description|raw }}</p>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}

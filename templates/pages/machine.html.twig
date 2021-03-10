@@ -1,0 +1,19 @@
+{% extends "base.html.twig" %}
+  {% block style %}
+   <link href="{{ asset('styles/machine.css') }}" rel="stylesheet">
+
+    {% endblock %}
+{% block content %}
+    <h1>{{ content.title }}</h1>
+    <div class="forma">
+    <label for="IdMachine">IdMachine:</label>
+    <input type="text" value={{ content.idMachine}}>
+
+    <label for="libelle">libelle:</label>
+    <input type="text" value= {{content.libelle}}>
+
+ <div class="botton">
+    <input type="button" class="ajouter" value="Ajouter">
+    </div>
+    </div>
+{% endblock %}

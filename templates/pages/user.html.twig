@@ -1,0 +1,24 @@
+   {% block style %}
+   <link href="{{ asset('styles/user.css') }}" rel="stylesheet">
+
+    {% endblock %}
+{% block content %}
+<div class="container">
+
+    <h1>{{ content.title }}</h1>
+    <div class="form">
+    <label for="idUser">Identifiant:</label>
+    <input type="text" value={{ content.idUser}}>
+
+    <label for="nom">Nom:</label>
+    <input type="text" value= {{content.nom}}>
+
+    <label for="prenom">Prenom:</label>
+    <input type="text" value= {{content.prenom}}>
+
+    <label for="email">Email:</label>
+    <input type="email" value= {{content.email}}>
+</div>
+</div>
+{% endblock %}
+

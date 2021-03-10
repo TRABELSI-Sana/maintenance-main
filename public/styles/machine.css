@@ -1,0 +1,28 @@
+.forma{
+display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 30%;
+    border: 1px;
+    border: solid;
+    border-width: 40%;
+    padding: 2%;
+    margin: auto;
+    font-family: fantasy;
+    color: cornflowerblue;
+    background:aliceblue;
+}
+
+.botton{
+
+padding: 1%;
+margin:auto;
+}
+.ajouter {
+    color: white;
+    margin: auto;
+    background: blue;
+}
+
+
+}

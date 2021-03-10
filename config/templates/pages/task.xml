@@ -3,16 +3,9 @@
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="http://schemas.sulu.io/template/template http://schemas.sulu.io/template/template-1.0.xsd">
 
-    <key>defaults</key>
-
-    <view>pages/default</view>
+    <key>task</key>
+    <view>pages/task</view>
     <controller>Sulu\Bundle\WebsiteBundle\Controller\DefaultController::indexAction</controller>
-    <cacheLifetime>604800</cacheLifetime>
-
-    <meta>
-        <title lang="en">Default</title>
-        <title lang="de">Standard</title>
-    </meta>
 
     <properties>
         <property name="title" type="text_line" mandatory="true">
@@ -35,12 +28,20 @@
 
             <tag name="sulu.rlp"/>
         </property>
-
-        <property name="article" type="text_editor">
+        <property name="idTask" type="text_line">
             <meta>
-                <title lang="en">Article</title>
-                <title lang="de">Artikel</title>
+                <title lang="en">Reference</title>
+                <title lang="fr">Référence</title>
             </meta>
         </property>
+        <property name="libelle" type="text_line">
+            <meta>
+                <title lang="en">Label</title>
+                <title lang="fr">Libellé</title>
+            </meta>
+        </property>
+
+
     </properties>
+    <!-- ... -->
 </template>
